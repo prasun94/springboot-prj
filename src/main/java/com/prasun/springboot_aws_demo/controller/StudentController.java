@@ -20,7 +20,7 @@ public class StudentController {
 	@Autowired
 	public StudentService sService;
 
-	@PostMapping("/register")
+	@PostMapping("/registertudent")
 	public Student addStudent(@RequestBody Student students) {
 		return sService.addStudent(students);
 	}
